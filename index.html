@@ -499,37 +499,56 @@
 
           <h2 class="title-backdrop">Оставьте свои данные, мы вам перезвоним</h2>
           <form class="feedback" action="" name="name" autocomplete="on" novalidate>
-              <label class="forms" for="user_name">Имя
-                  <input class="forms-input  user-person" type="text" id="user_name">
+              <div class="forms">
+                <label class="forms-label"  for="user_name">Имя</label>
+                <input class="forms-input  user-person" type="text" id="user_name">
                 <svg class="svg-forms" width="18" height="18">
                     <use href="./images/svg/sprint.svg#person-modal"></use>
                 </svg>
-              </label>
+              </div>
+              
 
-              <label class="forms" for="user_number">Телефон
-                  <input class="forms-input  user-phone" type="text" id="user_number">
+             <div  class="forms">
+                  <label class="forms-label" for="user_number">Телефон</label>
+                  <input class="forms-input  user-phone" type="tel" id="user_number">
                     <svg class="svg-forms" width="18" height="18">
                         <use href="./images/svg/sprint.svg#phone-modal"></use>
                     </svg>
-              </label>
+             </div>
+              
 
-              <label class="forms" for="user_email">Почта
-                  <input class="forms-input  user-email" type="text" id="user_email">
+              <div  class="forms">
+                  <label class="forms-label" for="user_email">Почта</label>
+                  <input class="forms-input  user-email" type="email" id="user_email">
                     <svg class="svg-forms" width="18" height="18">
                         <use href="./images/svg/sprint.svg#email-modal"></use>
                     </svg>
-              </label>
+              </div>
+              
 
-              <label class="forms" for="comments">Комментарий
+              <div  class="forms">
+                  <label class="forms-label" for="comments">Комментарий</label>
                   <textarea class="forms-textarea" name="comments" id="comments" rows="10" placeholder="Введите текст"></textarea>
-              </label>
+             
+              </div> 
 
-              <label class="conditions" for="checkbox">
-                  <input type="checkbox" name="checkbox" id="checkbox">
-                Соглашаюсь с рассылкой и принимаю <a href="#" class="conditions-word">Условия договора</a>
-              </label>
+             <div class="conditions">
+                  <label class="label-checkbox "  for="checkbox">
+                  <input class="input-checkbox " type="checkbox" name="checkbox" id="checkbox">
+                  <span class="checkicon"></span>
+                    <!-- <div class="checkicon">
+                        <svg class="checkuse" width="16" height="15">
+                            <use  href="./images/svg/sprint.svg#checkicon"></use>
+                        </svg>
+                    </div> -->
+                    <span>Соглашаюсь с рассылкой и принимаю <a href="#" class="conditions-word">Условия договора</a></span>
+                 </label>
+                
+             
+             </div>
 
-               <button class="feedback-btn">Отправить</button>
+               <button class="feedback-btn" type="submit">Отправить</button>
+               
           </form>
 
           
