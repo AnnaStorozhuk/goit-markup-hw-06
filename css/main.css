@@ -217,18 +217,26 @@ img {
   padding-bottom: 60px;
 }
 
-.address {
-  color: var(--white-color-header);
 
-  font-size: 14px;
-  line-height: 1.71;
-  font-style: normal;
-  text-decoration: none;
-  letter-spacing: 0.03em;
+
+.address {
+      color: var(--white-color-header);
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+}
+
+.addres-par {
+  margin: 0;
+  margin-top: 20px;
 }
 
 .info-nav {
   padding: 0;
+  margin: 0;
+  margin-top: 9px;
 }
 
 .info {
@@ -238,6 +246,7 @@ img {
   line-height: 1.71;
   text-decoration: none;
   letter-spacing: 0.03em;
+  margin-top: 9px;
 }
 
 .logo-basement {
@@ -262,7 +271,7 @@ img {
 }
 
 .basement .icons {
-  margin-left: 70px;
+  margin-left: 93px;
 }
 
 .title-basement {
@@ -289,16 +298,24 @@ img {
   align-items: center;
 }
 
-/* .form-footer {
+.form-footer {
   width: 570px;
-} */
+  display: flex;
+
+}
 
 .input-footer {
   background-color: var(--main-color-footer);
   height: 50px;
+  display: block;
   width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  padding-left: 17px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+
 }
 
 .btn-footer {
@@ -306,13 +323,17 @@ img {
   font-size: 16px;
   line-height: 1.87;
   margin-left: 12px;
+      height: 50px;
+  /* width: 200px;
+  align-items: center;
+  justify-content: center; */
 
   color: var(--white-color-header);
   background-color: var(--hover-focus);
 
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 10px;
+  padding-right: 28px;
   padding-left: 29px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -930,7 +951,7 @@ img {
   color: var(--main-color-title);
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   margin: 0;
@@ -1002,7 +1023,14 @@ img {
 .forms-textarea:hover,
 .forms-textarea:focus {
   border: 1px solid var(--hover-focus);
+
+  
   /* transition: border var(--time) var(--cubic); */
+}
+
+.forms-input:focus + .svg-forms {
+  fill: var(--hover-focus);
+  transition: fill var(--time) var(--cubic);
 }
 
 .conditions {
@@ -1061,6 +1089,7 @@ img {
 .feedback-btn:hover,
 .feedback-btn:focus {
   background-color: #188CE8;
+  transition: fill var(--time) var(--cubic);
 }
 .svg-forms {
   position: absolute;
@@ -1069,11 +1098,12 @@ img {
   fill: var(--primary-text-color);
 }
 
-.forms:hover,
+/* .forms:hover,
 .forms:focus {
   fill: var(--hover-focus);
-  /* transition: fill var(--time) var(--cubic); */
-}
+  
+  transition: fill var(--time) var(--cubic);
+} */
 
 .checkicon {
   border: 2px solid var(--main-color-title);
